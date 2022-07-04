@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Heebo", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background: white;
+}
+h2{
+    font-size: 5rem;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+h3{
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+    font-size: 1.2rm;
+    color: black;
+    margin-left: 5rem;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 1.5rem;
+    transform: translate(-50%,-50%) scale(4);
+}
+
+.home{
+    height: 100vh;
+}
+
+.first-page{
+    height: 100vh;
+    background: rgb(21, 21, 21);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.first-page img{
+    height: 100%;
+}
+
+.square{
+    height: 10rem;
+    width: 10rem;
+    background-color: rgb(54, 55, 56);
+    position: absolute;
+    top: 70%;
+    left: 70%;
+
+}
+
+.second-page{
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.intro-text {
+    width: 80%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1.5s all ease-in-out;
+    text-align: center;
+}
+
+.intro-appear{
+    opacity: 1;
+    transform:translateY(0px);
+}
+
+
+.thrid-text {
+    width: 80%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1.5s all ease-in-out;
+    text-align: center;
+}
+
+.intro-appears{
+    opacity: 1;
+    transform:translateY(0px);
+}
+.name-form,
+.email-form {
+    padding: center;
+    text-align: center;
+    padding: 3rem;
+}
+.form-wrapper button{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+}
+.form-wrapper label {
+    margin: 0rem 3rem;
+}
+.form-head{
+    text-align: center;
+    padding: 3rem;
+}
+#contact {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 1rem 2rem;
+    background: #000000;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out 0.2s;
+}
+button:hover{
+    background-color: #e0e0e0;
+}
+
+#progress-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8px;
+    background: linear-gradient(to right, #4e4e4e,#fcfcfc );
+    width: 0%;
+    z-index: 100;
+    transition: width 0.2s ease;
+}
